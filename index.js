@@ -22,9 +22,9 @@ buttonDivLeft.style.borderRadius = "10px";
 
 // Partie Variable
 
-var tableauMot = ["Arbre", "Cuillere", "Table", "Javascript"];
+var tableauMot = ["Arbre", "Cuillere", "Table", "Javascript", "Lettre", "Clavier", "Ecran", "Sucre"];
 var motRandom = Math.floor(Math.random() * tableauMot.length);
-var motRandom = tableauMot[motRandom];
+var motRandom = tableauMot[motRandom]; // tableauMot[chiffreRandom]
 var motRandom = motRandom.split('');
 var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var motATrouver = [''];
