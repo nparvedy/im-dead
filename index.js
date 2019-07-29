@@ -8,6 +8,7 @@ eltDivleft.style.alignItems = "center";
 
 const eltDivleftP = document.querySelectorAll("#left p"); // css de toutes les balises p
 eltDivleftP[0].innerText = "Indication : ";
+eltDivleftP[2].style.fontSize = "25px";
 
 
 const buttonDivLeft = document.querySelector('#left button'); // css du bouton 
@@ -25,13 +26,14 @@ var tableauMot = ["Arbre", "Cuillere", "Table", "Javascript"];
 var motRandom = Math.floor(Math.random() * tableauMot.length);
 var motRandom = tableauMot[motRandom];
 var motRandom = motRandom.split('');
-
+var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var motATrouver = [''];
-for (i = 0; i < motATrouver.length; i++){
-    motATrouver.length = motRandom.length;
-    var motATrouverDeviner = motATrouver.push('_');
-    console.log(motATrouverDeviner);
-    
+
+// Partie boucle 
+
+for (i = 0; i < motRandom.length; i++){
+    motATrouver.push('_');
+    eltDivleftP[2].innerHTML = `${motATrouver.join(' ')}`
 }
 
 console.log(motATrouver);
