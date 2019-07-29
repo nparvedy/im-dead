@@ -1,0 +1,36 @@
+main{
+    background-color:whitesmoke;
+    border:2px solid black;
+    border-radius:5px;
+    height:500px;
+    width:80%;
+    margin:auto;
+}
+#left_right{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    margin-top:20px;
+}
+#left{
+    border:2px solid black;
+    border-radius:5px;
+    height:250px;
+    width:45%;
+    background-color:rgb(192, 191, 191);
+}
+#right{
+    border:2px solid black;
+    border-radius:5px;
+    height:250px;
+    width:45%;
+    background-color:rgb(192, 191, 191);
+}
+
+#clavier{
+    height:180px;
+    border:2px solid black;
+    border-radius:5px;
+    background-color:rgb(120, 148, 184);
+    margin:20px;
+}
