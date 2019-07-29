@@ -25,6 +25,15 @@ var tableauMot = ["Arbre", "Cuillere", "Table", "Javascript"];
 var motRandom = Math.floor(Math.random() * tableauMot.length);
 var motRandom = tableauMot[motRandom];
 var motRandom = motRandom.split('');
+
 var motATrouver = [''];
+for (i = 0; i < motATrouver.length; i++){
+    motATrouver.length = motRandom.length;
+    var motATrouverDeviner = motATrouver.push('_');
+    console.log(motATrouverDeviner);
+    
+}
+
+console.log(motATrouver);
 
 console.log(motRandom);
