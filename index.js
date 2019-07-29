@@ -24,18 +24,22 @@ buttonDivLeft.style.borderRadius = "10px";
 
 var tableauMot = ["Arbre", "Cuillere", "Table", "Javascript", "Lettre", "Clavier", "Ecran", "Sucre"];
 var motRandom = Math.floor(Math.random() * tableauMot.length);
-var motRandom = tableauMot[motRandom]; // tableauMot[chiffreRandom]
-var motRandom = motRandom.split('');
+var motRandomChiffre = tableauMot[motRandom]; // tableauMot[chiffreRandom]
+var motRandomTableau = motRandomChiffre.split('');
+var lettreChoisi = "";
+var motComparaison = "";
 var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var motATrouver = [''];
 
 // Partie boucle 
 
-for (i = 0; i < motRandom.length; i++){
+for (i = 0; i < motRandomTableau.length; i++){
     motATrouver.push('_');
     eltDivleftP[2].innerHTML = `${motATrouver.join(' ')}`
 }
 
-console.log(motATrouver);
 
-console.log(motRandom);
+console.log(tableauMot[motRandom]);
+console.log(motRandomTableau);
+console.log(motATrouver);
+console.log(alphabet);
